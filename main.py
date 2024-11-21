@@ -1,22 +1,15 @@
 #### Fonction secondaire
 
 
-def ispalindrome(p):
-
-    # votre code ici
-    
-    return False
-
-#### Fonction principale
-
+def ispalindrome(s):
+    for i in range(len(a)//2):
+        if a[i] != a[-i-1]:
+            return False
+    return True
 
 def main():
-
-    # vos appels à la fonction secondaire ici
-
     for s in ["radar", "kayak", "level", "rotor", "civique", "deifie"]:
         print(s, ispalindrome(s))
-
 
 if __name__ == "__main__":
     main()
